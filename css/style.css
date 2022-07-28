@@ -243,6 +243,7 @@ header{
     flex-direction: column;
     align-items: center;
     height: 278px;
+    box-shadow: inset 0 0 10px #d0f1ff;
 }
 #subscribe .container h5{
     font-weight: bold;
