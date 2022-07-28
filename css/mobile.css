@@ -1,0 +1,98 @@
+/* Container */
+.container{
+    width:  100%;
+}
+
+/* Navbar */
+#navbar .container{
+    flex-direction: column;
+
+}
+#navbar .container a img{
+    margin: .25rem;
+    width: 64px;
+    
+}
+#navbar .container .navbar-items{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+#navbar .container .navbar-item{
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Homepage */
+#homepage .container{
+    background: rgb(0,71,109);
+    background: linear-gradient(90deg, rgba(0,71,109,1) 0%, rgba(0,119,182,1) 100%);
+    height: 16rem;
+    position: relative;
+}
+#homepage .container h2{
+    font-size: 1.5rem;
+    width: 24rem;
+    padding: 4rem 0 0 3rem;
+    
+}
+#homepage .container a{
+    padding: 1rem 2rem;
+    margin: 1rem 3rem;
+}
+
+
+
+/* Feature */
+#feature .container .card{
+    width: 90%;
+    margin: 1rem;
+}
+
+
+/* Contact */
+#contact .container .contact-form{
+    width: 100%;
+}
+
+#contact .container .contact-info{
+    display: none;
+}
+
+/* Subsribe */
+#subscribe .container h5{
+    font-size: 1.75rem;
+}
+
+
+#subscribe .container .contact-form input{
+    width: 80%;
+   
+}
+#subscribe .container .contact-form .information{
+    width: 80%;
+}
+#subscribe .container .contact-form button{
+    width: 50%;
+    height: 50px;
+    margin-top: 1.25rem;
+    align-self: flex-start;
+    font-size: 1.25rem;
+}
+
+/* Footer */
+#footer .footer-top .container{
+    flex-direction: column;
+}
+#footer .footer-top .container p{
+    font-size: 0.75rem;
+
+}
+#footer .footer-top .container .links{
+    margin: .5rem auto;
+}
+#footer .footer-content .container{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,32 +1,41 @@
+
 /* Navbar */
+header{
+    display: flex;
+    justify-content: center;
+
+}
 #navbar{
     background: #002E46;
-    height: 4.75rem;
+    min-height: 10vh;
+    width: 80%;
     display: flex;
     justify-content: center;
 }
 #navbar .container{
+    background: #002E46;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#navbar .container h1 a{
-    color: #f6f6f6;
-    font-size: 2rem;
+#navbar .container a img{
+    width: 84px;
+    
 }
-#navbar .container a{
+
+#navbar .container .navbar-item{
     color: #f6f6f6;
     font-size: 1rem;
     text-decoration: none;
     padding: 0.68rem 1.5rem;
 }
 
-#navbar .container a:nth-child(4){
+#navbar .container .navbar-item:nth-child(4){
     background: #01A6FF;
     border-radius: 5px;
     border: 1px solid #01A6FF;
 }
-#navbar .container a:nth-child(4):hover{
+#navbar .container .navbar-item:nth-child(4):hover{
     border: 1px solid #01A6FF;
     background: transparent;
     color: #01A6FF;
@@ -75,36 +84,26 @@
 }
 #feature .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items:center;
-    height: 17.5rem;
     background: #F2FBFF;
+    min-height: 30vh;
 }
 #feature .container .card{
+    margin: 2rem 0;
     background: #0076B6;
     border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 6.25rem;
-    width: 17.5rem;
     padding: 0.5rem 0.75rem;
     position: relative; 
     box-shadow: 0px 4px 12px  #BAEAFF;
-    cursor:pointer;
+    cursor:pointer; 
 }
 #feature .container .card:hover{
     -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-#feature .container .card:nth-child(1){
-    margin-right: 0.75rem;
-}
-#feature .container .card:nth-child(2){
-    margin-right: 0.75rem;
-}
-#feature .container .card:nth-child(4){
-    margin-left: 0.75rem;
 }
 
 #feature .container .card i{
@@ -147,7 +146,7 @@
     flex-direction: column;
     align-items: center;
     background: #0076b6c5;
-    width: 43rem;
+    width: 60%;
     box-shadow: 4px 4px 14px  #BAEAFF;
     z-index: 1;
 }
@@ -159,7 +158,6 @@
 }
 #contact .container .contact-form label{
     display: block;
-    width: 72px;
     font-weight: bold;
     font-size: 0.875rem;
     margin-bottom: 0.5rem;
@@ -167,7 +165,7 @@
     color: #f6f6f6;
 }
 #contact .container .contact-form input{
-    width: 282px;
+    width: 90%;
     height: 42px;
     border-radius: 5px;
 }
@@ -175,18 +173,18 @@
     font-size: 0.75rem;
     font-weight: 300;
     color: #f6f6f6;
-    width: 282px;
+    width: 400px;
     margin-top: 4px;
 }
 #contact .container .contact-form textarea{
-    width: 282px;
+    width: 90%;
     height: 84px;
     border-radius: 5px; 
     resize: none;
 }
 #contact .container .contact-form button{
     display: block;
-    width: 282px;
+    width: 90%;
     height: 42px;
     border-radius: 5px; 
     background: #F2FBFF;
@@ -222,14 +220,16 @@
 #contact .container .contact-info{
     background: #F6F6F6;
     position: relative;
-    width: 32rem;
+    width: 40%;
     height: 100%;
     border-left: 2px solid #09AAFF;
 }
 #contact .container .contact-info img{
-   position: absolute;
-   top: 149px;
-   left: 24px;
+    position: absolute;
+    top: 149px;
+    left: 24px;
+    width: 80%;
+    height: 60%;
 }
 
 /* Subsribe */
@@ -258,14 +258,13 @@
 }
 #subscribe .container .contact-form label{
     display: block;
-    width: 72px;
     font-weight: bold;
     font-size: 0.875rem;
     margin-bottom: 0.5rem;
     color: #002E46;
 }
 #subscribe .container .contact-form input{
-    width: 384px;
+    width: 90%;
     height: 42px;
     border-radius: 5px;
     border: 0.5px solid #044e76;
@@ -291,8 +290,8 @@
 }
 
 #subscribe .container .contact-form button{
-    display: block;
-    width: 180px;
+
+    width: 50%;
     height: 60px;
     border-radius: 5px; 
     background: #01A6FF;
@@ -302,7 +301,6 @@
     cursor: pointer;
     align-self: center;
     font-size: 1.25rem;
-
 }
 
 /* Footer */
@@ -314,7 +312,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 6rem;
+    min-height: 3rem;
     color: #333;
 }
 
@@ -349,7 +347,7 @@
     margin: 1.75rem 0;
 }
 #footer .footer-content .container .marka p{
-    width: 500px;
+    width: 300px;
     color: #f6f6f6;
     margin-bottom: 1rem;
 }
