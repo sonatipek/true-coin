@@ -51,16 +51,17 @@ header{
     background: linear-gradient(90deg, rgba(0,71,109,1) 0%, rgba(0,119,182,1) 100%);
     height: 24rem;
     position: relative;
+    display: flex;
 }
 
-#homepage .container h2{
+#homepage .container .text-content h2{
     font-weight: bold;
     font-size: 2.25rem;
     color: #f6f6f6;
     padding: 8rem 0 0 6.375rem;
     width: 45rem;
 }
-#homepage .container a{
+#homepage .container .text-content a{
     display: inline-block;
     font-size: 1rem;
     text-decoration: none;
@@ -72,9 +73,13 @@ header{
     margin: 1rem 6.375rem;
     box-shadow: 0px 4px 12px rgb(0, 146, 223, 0.3);
 }
-#homepage .container a i{
+#homepage .container .text-content a i{
     margin-right: 1rem;
     font-size: 1rem;
+}
+#homepage .container .img-content{
+    margin-top: auto;
+    opacity: 0.3;
 }
 
 /* Feature */

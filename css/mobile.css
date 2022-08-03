@@ -31,13 +31,13 @@
     height: 16rem;
     position: relative;
 }
-#homepage .container h2{
+#homepage .container .text-content h2{
     font-size: 1.5rem;
     width: 24rem;
     padding: 4rem 0 0 3rem;
     
 }
-#homepage .container a{
+#homepage .container .text-content a{
     padding: 1rem 2rem;
     margin: 1rem 3rem;
 }
